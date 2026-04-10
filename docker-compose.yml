@@ -1,0 +1,15 @@
+services:
+  backend:
+    image: oholala/optimas-backend:latest
+    container_name: optimas-backend
+    ports:
+      - "8000:8000"
+
+  optimas:
+    image: oholala/optimas-frontend:latest
+    container_name: optimas-frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
