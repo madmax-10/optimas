@@ -1,6 +1,6 @@
 services:
   backend:
-    image: oholala/optimas-backend:latest
+    image: oholala/optimas-backend:simple
     container_name: optimas-backend
     volumes:
       - ${DATA_PATH}:/app/data
