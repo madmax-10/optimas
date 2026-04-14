@@ -8,7 +8,7 @@ services:
       - "8000:8000"
 
   optimas:
-    image: oholala/optimas-frontend:latest
+    image: oholala/optimas-fronrend:simple
     container_name: optimas-frontend
     ports:
       - "5173:5173"
