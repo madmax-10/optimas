@@ -1,7 +1,9 @@
 services:
   backend:
-    image: oholala/optimas-backend:latest
+    image: oholala/optimas-backend:small
     container_name: optimas-backend
+    volumes:
+      - ${DATA_PATH}:/app/data
     ports:
       - "8000:8000"
 
